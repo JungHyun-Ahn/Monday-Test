@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="box">
+    <h2>GMA 회원가입</h2>
+    <div class="input-box">
+      <input type="email" id="email" placeholder="이메일을 입력해 주세요.">
+      <span class="errMail"></span>
+      <input type="text" id="name" placeholder="이름을 입력해 주세요">
+      <span class="errName"></span>
+      <input type="password" id="pw1" placeholder="비밀번호를 입력해 주세요.">
+      <span class="errPw1"></span>
+      <input type="password" id="pw2" placeholder="비밀번호를 입력해 주세요.">
+      <span class="errPw2"></span>
+    </div>
+    <div class="identification">
+      <div class="tel">
+        <input type="text" id="telNum1" maxlength="3" oninput="chkTel1()">
+        <span>-</span>
+        <input type="text" id="telNum2" maxlength="4" oninput="chkTel2()">
+        <span>-</span>
+        <input type="text" id="telNum3" maxlength="4" oninput="chkTel3()">
+      </div>
+      <div class="randNum">
+        <span>000000</span>
+        <button id="submitNumber" disabled="true">인증번호 전송</button>
+      </div>
+      <div class="chkNum">
+        <span class="time">3:00</span>
+        <button id="chkNumber" disabled="true">인증 완료</button>
+      </div>
+    </div>
+    <select name="" id="">
+      <option disabled = "true" selected>지역을 선택하세요</option>
+      <option>서울</option>
+      <option>인천</option>
+      <option>서울</option>
+    </select>
+    <div class="gender">
+      <label for="female"><input type="radio" id="female" name="gender">여성</label>
+      <label for="male"><input type="radio" id="male" name="gender">남성</label>
+    </div>
+    <div class="bar"></div>
+    <button id="join">가입하기</button>
+  </div>
+</body>
+</html>
+
+
+
+
+
